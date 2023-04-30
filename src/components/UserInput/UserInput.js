@@ -16,7 +16,7 @@ export default function UserInput ({ route }) {
     } else {
       setShowSummary(true);
     }
-  };
+  }
 
   const handleAnswerChange = (text) => {
     const newAnswers = [...userAnswers];

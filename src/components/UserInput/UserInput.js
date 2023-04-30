@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
   },
   titleStyle: {
     color: 'white',
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center'
   },
   promptStyle: {
 

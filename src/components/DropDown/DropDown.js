@@ -46,12 +46,14 @@ export default function DropDown({route}) {
           ))}
         </Picker>
       )}
-      <Button 
-        title="Next"
-        buttonStyle={styles.nextButton}
-        titleStyle={styles.nextTitleStyle}
-        onPress={handleNextQuestion} 
-      />
+      <View style={styles.buttonContainer}>
+        <Button 
+          title="Next"
+          buttonStyle={styles.nextButton}
+          titleStyle={styles.nextTitleStyle}
+          onPress={handleNextQuestion} 
+        />
+      </View>
     </View>
   );
 }
@@ -73,6 +75,6 @@ const styles = StyleSheet.create({
 
   },
   nextTitleStyle: {
-    
+
   }
 })

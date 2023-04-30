@@ -37,7 +37,16 @@ export default function App() {
             color: 'white'
           }
         }}/>
-        <Stack.Screen name='user-input' component={UserInput} />
+        <Stack.Screen name='user-input' component={UserInput} options={{
+          headerStyle: {
+            borderBottomWidth: 0,
+            backgroundColor: '#190840'
+          },
+          headerTitleStyle: {
+            marginLeft: 10,
+            color: 'white'
+          }
+        }} />
         <Stack.Screen name='matching' component={Matching}/>
         <Stack.Screen name='drop-down' component={DropDown} />
         <Stack.Screen name='Summary' component={Summary} />

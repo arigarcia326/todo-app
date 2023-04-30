@@ -81,6 +81,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   buttonContainer: {
-    
+      position: 'absolute',
+    bottom: 16,
+    left: 0,
+    right: 0,
   }
 })

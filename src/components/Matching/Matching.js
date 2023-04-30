@@ -152,7 +152,9 @@ const styles = StyleSheet.create({
     marginTop: 16
   },
   checkStyle: {
-    backgroundColor: '#26A646'
+    backgroundColor: '#26A646',
+    height: 60,
+    borderRadius: 10
   },
   checkTitleStyle: {
     fontSize: 20,

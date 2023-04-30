@@ -9,8 +9,9 @@ export default function UserInput ({ route }) {
   const [userAnswers, setUserAnswers] = useState(Array(triviaItems.length).fill(""));
   const [showSummary, setShowSummary] = useState(false);
 
-  
+  // updates the state of the component based on the current index of the question being shown
   const handleNextQuestion = () => {
+    //if current question index is less than the total number 
     if (currentQuestionIndex < triviaItems.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {

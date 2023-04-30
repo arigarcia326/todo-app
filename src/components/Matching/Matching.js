@@ -53,9 +53,9 @@ export default function Matching({ route }) {
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <View style={{ flex: 1, marginRight: 8 }}>
           {item.answer.map((option, index) => (
-            <TouchableOpacity
+            <Button
               key={`${item.prompt}_${option.option}`}
-              style={{
+              buttonStyle={{
                 backgroundColor:
                   selectedOption === option.option ? 'yellow' : matchedItems.find(
                       (matchedItem) =>
@@ -73,14 +73,14 @@ export default function Matching({ route }) {
               onPress={() => handleMatch(option.option, selectedValue, index)}
             >
               <Text style={{ textAlign: 'center' }}>{option.option}</Text>
-            </TouchableOpacity>
+            </Button>
           ))}
         </View>
         <View style={{ flex: 1, marginLeft: 8 }}>
           {item.answer.map((value, index) => (
             <Button
               key={`${item.prompt}_${value.value}`}
-              style={{
+              buttonStyle={{
                 backgroundColor:
                   selectedValue === value.value ? 'yellow' : matchedItems.find(
                       (matchedItem) =>
@@ -97,7 +97,7 @@ export default function Matching({ route }) {
               }}
               onPress={() => handleMatch(selectedOption, value.value)}>
               <Text style={{ textAlign: 'center' }}>{value.value}</Text>
-            </TouchableOpacity>
+            </Button>
           ))}
         </View>
       </View>

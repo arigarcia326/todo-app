@@ -131,7 +131,8 @@ const styles = StyleSheet.create({
   titleStyle: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 16
+    marginBottom: 16,
+    color: 'white'
   },
   checkStyle: {
     marginTop: 16

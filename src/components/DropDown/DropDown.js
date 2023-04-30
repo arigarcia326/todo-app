@@ -33,7 +33,7 @@ export default function DropDown({route}) {
 
   return (
     <View style={styles.container} >
-      <Text style={styles.titleName}>{triviaName}</Text>
+      <Text style={styles.titleStyle}>{triviaName}</Text>
       <Text style={styles.promptStyle}>{currentQuestion.prompt}</Text>
       {currentQuestion.type === 'drop-down' && (
         <Picker
@@ -61,13 +61,18 @@ export default function DropDown({route}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 
+    backgroundColor: '#190840'
   },
   titleStyle: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    marginBottom: 16,
     color: 'white'
   },
   promptStyle: {
-    color: 'white'
+    fontSize: 25, 
+    color: 'white',
+    marginBottom: 50
   },
   pickerStyle: {
 

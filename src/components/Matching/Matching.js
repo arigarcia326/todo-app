@@ -116,8 +116,13 @@ export default function Matching({ route }) {
         renderItem={renderItem} 
         keyExtractor={(item) => item.prompt} 
       />
-      <View style={styles.checkStyle}>
-        <Button title="Check Answers" onPress={handleCheckAnswers} />
+      <View style={styles.checkContainer}>
+        <Button 
+          title="Check Answers" 
+          titleStyle={styles.checkTitleStyle}
+          buttonStyle= {styles.checkStyle}
+          onPress={handleCheckAnswers} 
+        />
       </View>
     </View>
   );
@@ -143,8 +148,15 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     color: 'white'
   },
-  checkStyle: {
+  checkContainer: {
     marginTop: 16
+  },
+  checkStyle: {
+    backgroundColor: '#26A646'
+  },
+  checkTitleStyle: {
+    fontSize: 20,
+    fontWeight: 'bold'
   },
   optionStyle: {
     textAlign: 'center',

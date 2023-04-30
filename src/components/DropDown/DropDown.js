@@ -34,7 +34,7 @@ export default function DropDown({route}) {
   return (
     <View style={styles.container} >
       <Text style={styles.titleName}>{triviaName}</Text>
-      <Text>{currentQuestion.prompt}</Text>
+      <Text style={styles.promptStyle}>{currentQuestion.prompt}</Text>
       {currentQuestion.type === 'drop-down' && (
         <Picker
           selectedValue={userAnswers[currentQuestionIndex]}
@@ -57,5 +57,8 @@ const styles = StyleSheet.create({
   titleStyle: {
     
   },
+  promptStyle: {
 
+  },
+  
 })

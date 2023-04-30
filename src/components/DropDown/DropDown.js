@@ -76,5 +76,8 @@ const styles = StyleSheet.create({
   },
   nextTitleStyle: {
 
+  },
+  buttonContainer: {
+    
   }
 })

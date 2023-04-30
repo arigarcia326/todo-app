@@ -72,12 +72,15 @@ const styles = StyleSheet.create({
 
   },
   nextButton: {
-
+    backgroundColor: '#26A646',
+    height: 60,
+    borderRadius: 10
   },
   nextTitleStyle: {
-
+    fontSize: 20,
+    fontWeight: 'bold'
   },
   buttonContainer: {
-    
+    marginTop: 16
   }
 })

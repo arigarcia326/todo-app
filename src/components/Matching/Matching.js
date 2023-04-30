@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Text, Button } from '@rneui/themed'
-import { View, FlatList, TouchableOpacity } from 'react-native'
+import { View, FlatList, TouchableOpacity, StyleSheet } from 'react-native'
 
 
 export default function Matching({ route }) {
@@ -106,11 +106,22 @@ export default function Matching({ route }) {
 
   return (
     <View style={{ padding: 16 }}>
-      <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>{triviaName}</Text>
-      <FlatList data={triviaItems} renderItem={renderItem} keyExtractor={(item) => item.prompt} />
+      <Text 
+        style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>
+          {triviaName}
+      </Text>
+      <FlatList 
+        data={triviaItems} 
+        renderItem={renderItem} 
+        keyExtractor={(item) => item.prompt} 
+      />
       <View style={{ marginTop: 16 }}>
         <Button title="Check Answers" onPress={handleCheckAnswers} />
       </View>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+
+})

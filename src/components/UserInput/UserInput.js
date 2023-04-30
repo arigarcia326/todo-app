@@ -53,8 +53,8 @@ const styles = StyleSheet.create({
   promptStyle: {
     color: 'white',
     marginTop: 30,
-    fontSize: 25
-    
+    fontSize: 25,
+    marginLeft: 20
   },
   inputStyle: {
 

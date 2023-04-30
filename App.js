@@ -39,6 +39,7 @@ export default function App() {
             borderBottomWidth: 0,
             backgroundColor: '#190840'
           },
+          headerTintColor: 'white',
           headerTitleStyle: {
             marginLeft: 10,
             color: 'white'

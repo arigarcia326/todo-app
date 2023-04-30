@@ -61,12 +61,13 @@ export default function DropDown({route}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 
   },
   titleStyle: {
-    
+    color: 'white'
   },
   promptStyle: {
-
+    color: 'white'
   },
   pickerStyle: {
 
@@ -81,9 +82,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   buttonContainer: {
-      position: 'absolute',
+    position: 'absolute',
     bottom: 16,
-    left: 0,
-    right: 0,
+    left: 16,
+    right: 16,
   }
 })

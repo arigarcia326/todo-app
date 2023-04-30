@@ -78,7 +78,7 @@ export default function Matching({ route }) {
         </View>
         <View style={{ flex: 1, marginLeft: 8 }}>
           {item.answer.map((value, index) => (
-            <TouchableOpacity
+            <Button
               key={`${item.prompt}_${value.value}`}
               style={{
                 backgroundColor:
@@ -133,20 +133,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
     color: 'white'
-  },
-  matchStyle: {
-    backgroundColor:
-                  selectedValue === value.value ? 'yellow' : matchedItems.find(
-                      (matchedItem) =>
-                        matchedItem.option === null &&
-                        matchedItem.value === value.value)
-                  ? 'orange'
-                  : 'white',
-    borderWidth: 1,
-    borderColor: 'black',
-    padding: 16,
-    marginBottom: 8,
-    borderRadius: 8
   },
   checkStyle: {
     marginTop: 16

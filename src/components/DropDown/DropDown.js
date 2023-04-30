@@ -49,6 +49,7 @@ export default function DropDown({route}) {
       <Button 
         title="Next"
         buttonStyle={styles.nextButton}
+        titleStyle={styles.nextTitleStyle}
         onPress={handleNextQuestion} 
       />
     </View>
@@ -69,6 +70,9 @@ const styles = StyleSheet.create({
 
   },
   nextButton: {
+
+  },
+  nextTitleStyle: {
     
   }
 })

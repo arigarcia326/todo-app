@@ -46,8 +46,8 @@ export default function Matching({ route }) {
   };
 
   const renderItem = ({ item }) => (
-    <View style={{ marginBottom: 16 }}>
-      <Text style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 8 }}>
+    <View style={styles.matchingContainer}>
+      <Text style={styles.promptStyle}>
         {item.prompt}
       </Text>
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
@@ -129,8 +129,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#190840' ,
     padding: 16
   },
+  matchingContainer: {
+    marginBottom: 16
+  },
+  promptStyle: {
+    fontSize: 25, 
+    color: 'white',
+    marginBottom: 50
+  },
   titleStyle: {
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 16,
     color: 'white'

@@ -37,6 +37,7 @@ export default function DropDown({route}) {
       <Text style={styles.promptStyle}>{currentQuestion.prompt}</Text>
       {currentQuestion.type === 'drop-down' && (
         <Picker
+          style={styles.pickerStyle}
           selectedValue={userAnswers[currentQuestionIndex]}
           onValueChange={handleAnswerChange}
         >
@@ -45,7 +46,11 @@ export default function DropDown({route}) {
           ))}
         </Picker>
       )}
-      <Button title="Next" onPress={handleNextQuestion} />
+      <Button 
+        title="Next"
+        buttonStyle={styles.nextButton}
+        onPress={handleNextQuestion} 
+      />
     </View>
   );
 }
@@ -60,5 +65,10 @@ const styles = StyleSheet.create({
   promptStyle: {
 
   },
+  pickerStyle: {
 
+  },
+  nextButton: {
+    
+  }
 })

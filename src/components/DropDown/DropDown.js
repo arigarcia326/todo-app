@@ -81,6 +81,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   buttonContainer: {
-    marginTop: 16
+  
   }
 })

@@ -1,0 +1,234 @@
+export const triviaData = [
+  //Math Trivia Questions
+  {
+    triviaName: 'Math',
+    triviaItems: [
+      {
+        prompt: 'What is 6 + 11?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '17'
+      },
+      {
+        prompt: 'What is 2 x 4?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '8'
+      },
+      {
+        prompt: 'What is 15 / 3?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '5'
+      },
+      {
+        prompt: 'What is 2 + 4 + 15?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '21'
+      },
+      {
+        prompt: 'What is 2 - 4?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '-2'
+      }
+    ]
+  },
+  //Shapes Trivia Questions
+  {
+    triviaName: 'Shapes',
+    triviaItems: [
+      {
+        prompt: 'How many sides does a rectangle have?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '4'
+      },
+      {
+        prompt: 'How many angles does a triangle have?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '3'
+      },
+      {
+        prompt: 'How many sides does a trapezoid have?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '4'
+      },
+      {
+        prompt: 'How many edges does a cube have?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '12'
+      },
+      {
+        prompt: 'How many sides does an octogon have?',
+        answer: "",
+        type: 'user-input',
+        userAnswer: [],
+        correctAnswer: '8'
+      },
+    ]
+  },
+  {
+    triviaName: 'Capitols',
+    triviaItems: [
+      {
+        prompt: 'Match the state to its capitol.',
+        answer: [
+          {option: 'Florida', value: 'Tallahassee'},
+          {option: 'Arizona', value: 'Phoenix'},
+          {option: 'Utah', value: 'Salt Lake City'},
+          {option: 'New Jersey', value: 'Trenton'},
+          {option: 'Oregon', value: 'Salem'},
+          {option: 'Boston', value: 'Massachusetts'}
+        ],
+        type: 'matching',
+        userAnswer: [],
+        correctAnswer: [
+          {option: 'Florida', value: 'Tallahassee'},
+          {option: 'Arizona', value: 'Phoenix'},
+          {option: 'Utah', value: 'Salt Lake City'},
+          {option: 'New Jersey', value: 'Trenton'},
+          {option: 'Oregon', value: 'Salem'},
+          {option: 'Boston', value: 'Massachusetts'}
+        ]
+      }
+    ]
+  },
+  {
+    triviaName: 'Inventors',
+    triviaItems: [
+      {
+        prompt: 'Match the inventors with their inventions.',
+        answer: [
+          {option: 'Thomas Edison', value: 'light bulb'},
+          {option: 'Alexander Graham Bell', value: 'telephone'},
+          {option: 'Gabriel Farenheit', value: 'thermometer'},
+          {option: 'Peter Henlein', value: 'watch' },
+          {option: 'Samuel Morse', value: 'telegraph'},
+          {option: 'Karl Benz', value: 'automobile'}
+        ],
+        type: 'matching',
+        userAnswer: [],
+        correctAnswer: [
+          {option: 'Thomas Edison', value: 'light bulb'},
+          {option: 'Alexander Graham Bell', value: 'telephone'},
+          {option: 'Gabriel Farenheit', value: 'thermometer'},
+          {option: 'Peter Henlein', value: 'watch' },
+          {option: 'Samuel Morse', value: 'telegraph'},
+          {option: 'Karl Benz', value: 'automobile'}
+        ]
+      }
+    ]
+  },
+  {
+    triviaName: 'Spelling',
+    triviaItems: [
+      {
+        prompt: 'His __option__ was noticeable.',
+        options: [
+          {label: 'absence'},
+          {label: 'absense'},
+          {label: 'absance'},
+          {label: 'abcense'}
+        ],
+        correctAnswer: 'absence',
+        type: 'drop-down'
+      },
+      {
+        prompt: 'I want to make sure I __option__ her presence.',
+        options: [
+          {label: 'acknowlege'},
+          {label: 'aknowledge'},
+          {label: 'acknowledge'},
+          {label: 'acknowlege'}
+        ],
+        correctAnswer: 'acknowledge',
+        type: 'drop-down'
+      },
+      {
+        prompt: 'I __option__ know what I am doing!',
+        options: [
+          {label: 'definately'},
+          {label: 'definitly'},
+          {label: 'definatly'},
+          {label: 'definitely'}
+        ],
+        correctAnswer: 'definitely',
+        type: 'drop-down'
+      },
+      {
+        prompt: 'I work hard to __option__ success.',
+        options: [
+          {label: 'garantee'},
+          {label: 'guarantee'},
+          {label: 'garanty'},
+          {label: 'garentee'}
+        ],
+        correctAnswer: 'guarantee',
+        type: 'drop-down'
+      }
+    ]
+  },
+  {
+    triviaName: 'Grammar',
+    triviaItems: [
+      {
+        prompt: 'Do you think she __option__ what the professor said?',
+        options: [
+          {label: 'understood'},
+          {label: 'understand'},
+          {label: 'understanding'},
+          {label: 'understood it'}
+        ],
+        correctAnswer: 'understood',
+        type: 'drop-down'
+      },
+      {
+        prompt: 'He __option__ extremely tired.',
+        options: [
+          {label: 'looks'},
+          {label: 'looking'},
+          {label: 'look'},
+          {label: 'looked'}
+        ],
+        correctAnswer: 'looks',
+        type: 'drop-down'
+      },
+      {
+        prompt: 'I have never __option__ pickles before.',
+        options: [
+          {label: 'ate'},
+          {label: 'eaten'},
+          {label: 'eat'},
+          {label: 'aten'}
+        ],
+        correctAnswer: 'eaten',
+        type: 'drop-down'
+      },
+      {
+        prompt: 'Yesterday, I __option__ on the couch and fell asleep.',
+        options: [
+          {label: 'lied'},
+          {label: 'lie'},
+          {label: 'lay'},
+          {label: 'layed'}
+        ],
+        correctAnswer: 'lied',
+        type: 'drop-down'
+      }
+    ]
+  }
+]

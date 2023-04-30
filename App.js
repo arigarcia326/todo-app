@@ -34,7 +34,7 @@ export default function App() {
             color: 'white'
           }
         }}/>
-        <Stack.Screen name='user-input' component={UserInput} options={{
+        <Stack.Screen name='user input' component={UserInput} options={{
           headerStyle: {
             borderBottomWidth: 0,
             backgroundColor: '#190840'
@@ -56,7 +56,7 @@ export default function App() {
             color: 'white'
           }
         }} />
-        <Stack.Screen name='drop-down' component={DropDown} options={{
+        <Stack.Screen name='drop down' component={DropDown} options={{
           headerStyle: {
             borderBottomWidth: 0,
             backgroundColor: '#190840'
@@ -101,7 +101,7 @@ export default function App() {
             onPress={() => {
               switch (item.triviaItems[0].type) {
                 case 'user-input':
-                  navigation.navigate('user-input', {
+                  navigation.navigate('user input', {
                     triviaName: item.triviaName, 
                     triviaItems: item.triviaItems
                   })
@@ -113,7 +113,7 @@ export default function App() {
                   })
                   break
                 case 'drop-down':
-                  navigation.navigate('drop-down', {
+                  navigation.navigate('drop down', {
                     triviaName: item.triviaName,
                     triviaItems: item.triviaItems
                   })

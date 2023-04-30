@@ -45,9 +45,39 @@ export default function App() {
             color: 'white'
           }
         }} />
-        <Stack.Screen name='matching' component={Matching}/>
-        <Stack.Screen name='drop-down' component={DropDown} />
-        <Stack.Screen name='Summary' component={Summary} />
+        <Stack.Screen name='matching' component={Matching} options={{
+          headerStyle: {
+            borderBottomWidth: 0,
+            backgroundColor: '#190840'
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            marginLeft: 10,
+            color: 'white'
+          }
+        }} />
+        <Stack.Screen name='drop-down' component={DropDown} options={{
+          headerStyle: {
+            borderBottomWidth: 0,
+            backgroundColor: '#190840'
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            marginLeft: 10,
+            color: 'white'
+          }
+        }} />
+        <Stack.Screen name='Summary' component={Summary} options={{
+          headerStyle: {
+            borderBottomWidth: 0,
+            backgroundColor: '#190840'
+          },
+          headerTintColor: 'white',
+          headerTitleStyle: {
+            marginLeft: 10,
+            color: 'white'
+          }
+        }} />
       </Stack.Navigator>
     </NavigationContainer>
   )

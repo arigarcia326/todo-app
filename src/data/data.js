@@ -137,7 +137,7 @@ export const triviaData = [
     triviaName: 'Spelling',
     triviaItems: [
       {
-        prompt: 'His __option__ was noticeable.',
+        prompt: 'His _____ was noticeable.',
         options: [
           {label: 'absence'},
           {label: 'absense'},
@@ -148,7 +148,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'I want to make sure I __option__ her presence.',
+        prompt: 'I want to make sure I _____ her presence.',
         options: [
           {label: 'acknowlege'},
           {label: 'aknowledge'},
@@ -159,7 +159,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'I __option__ know what I am doing!',
+        prompt: 'I _____ know what I am doing!',
         options: [
           {label: 'definately'},
           {label: 'definitly'},
@@ -170,7 +170,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'I work hard to __option__ success.',
+        prompt: 'I work hard to _____ success.',
         options: [
           {label: 'garantee'},
           {label: 'guarantee'},
@@ -186,7 +186,7 @@ export const triviaData = [
     triviaName: 'Grammar',
     triviaItems: [
       {
-        prompt: 'Do you think she __option__ what the professor said?',
+        prompt: 'Do you think she _____ what the professor said?',
         options: [
           {label: 'understood'},
           {label: 'understand'},
@@ -197,7 +197,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'He __option__ extremely tired.',
+        prompt: 'He _____ extremely tired.',
         options: [
           {label: 'looks'},
           {label: 'looking'},
@@ -208,7 +208,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'I have never __option__ pickles before.',
+        prompt: 'I have never _____ pickles before.',
         options: [
           {label: 'ate'},
           {label: 'eaten'},
@@ -219,7 +219,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'Yesterday, I __option__ on the couch and fell asleep.',
+        prompt: 'Yesterday, I _____ on the couch and fell asleep.',
         options: [
           {label: 'lied'},
           {label: 'lie'},

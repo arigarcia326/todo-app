@@ -80,6 +80,8 @@ export default function Matching({ route }) {
           {item.answer.map((value, index) => (
             <Button
               key={`${item.prompt}_${value.value}`}
+              title = {value.value}
+              titleStyle={styles.valueStyle}
               buttonStyle={{
                 backgroundColor:
                   selectedValue === value.value ? 'yellow' : matchedItems.find(
@@ -96,7 +98,6 @@ export default function Matching({ route }) {
                 borderRadius: 8
               }}
               onPress={() => handleMatch(selectedOption, value.value)}>
-              <Text style={{ textAlign: 'center' }}>{value.value}</Text>
             </Button>
           ))}
         </View>
@@ -138,6 +139,10 @@ const styles = StyleSheet.create({
     marginTop: 16
   },
   optionStyle: {
+    textAlign: 'center',
+    color: 'black'
+  },
+  valueStyle: {
     textAlign: 'center',
     color: 'black'
   }

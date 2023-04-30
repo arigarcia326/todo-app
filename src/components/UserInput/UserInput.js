@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#190840',
   },
   titleStyle: {
-    color: 'white'
+   
   },
   promptStyle: {
 

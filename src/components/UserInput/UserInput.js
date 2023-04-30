@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Text, Input, Button } from '@rneui/themed'
 import { View, StyleSheet } from 'react-native';
 import Summary from '../Summary/Summary';

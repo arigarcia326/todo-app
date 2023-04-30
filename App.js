@@ -3,10 +3,8 @@ import { StyleSheet, View, FlatList } from 'react-native';
 import { Text, Button } from '@rneui/themed'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
 import * as Font from 'expo-font'
 import FontAwesome from '@expo/vector-icons/FontAwesome'
-
 import { triviaData } from './src/data/data';
 import UserInput from './src/components/userInput/userInput';
 import Matching from './src/components/Matching/Matching';

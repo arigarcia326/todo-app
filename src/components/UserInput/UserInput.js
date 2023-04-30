@@ -45,10 +45,11 @@ const styles = StyleSheet.create({
   titleStyle: {
     color: 'white',
     fontSize: 30,
-    textAlign: 'center',
+    marginLeft: 20,
     marginTop: 20
   },
   promptStyle: {
+    color: 'white',
 
   },
   inputStyle: {

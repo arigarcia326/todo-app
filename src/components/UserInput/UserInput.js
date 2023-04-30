@@ -47,13 +47,14 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginLeft: 20,
     marginTop: 20,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontWeight: 'bold'
   },
   promptStyle: {
     color: 'white',
     marginTop: 30,
     fontSize: 25
-
+    
   },
   inputStyle: {
 

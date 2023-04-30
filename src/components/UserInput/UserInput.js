@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
 
   },
   buttonStyle: {
-
+    marginTop: 100
   },
   buttonTitleStyle: {
 

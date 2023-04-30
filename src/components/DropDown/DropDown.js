@@ -60,7 +60,7 @@ export default function DropDown({route}) {
 
 const styles = StyleSheet.create({
   container: {
-    
+    flex: 1,
   },
   titleStyle: {
     
@@ -81,6 +81,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   buttonContainer: {
-  
+    alignSelf: 'flex-end',
+    marginBottom: 20,
+    marginRight: 20
   }
 })

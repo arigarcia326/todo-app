@@ -74,7 +74,9 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   questionContainer: {
-    justifyContent: 'center'
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   promptStyle: {
     fontSize: 25, 

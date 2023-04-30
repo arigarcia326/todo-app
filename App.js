@@ -81,10 +81,10 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   )
-
+  
+  //HOME SCREEN
   function HomeScreen ({ navigation }) {
     cacheFonts([FontAwesome.font])
-   
     return (
       <View style={styles.container}>
         <Text style= {styles.triviaTitle}>Trivia Challenge</Text>
@@ -133,6 +133,7 @@ export default function App() {
 
 }
 
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

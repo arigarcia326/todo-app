@@ -75,7 +75,9 @@ const styles = StyleSheet.create({
     marginBottom: 50
   },
   pickerStyle: {
-
+    height: 40,
+    width: 200,
+    marginLeft: 20
   },
   nextButton: {
     backgroundColor: '#26A646',

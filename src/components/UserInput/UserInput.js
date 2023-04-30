@@ -11,14 +11,16 @@ export default function UserInput ({ route }) {
 
   // updates the state of the component based on the current index of the question being shown
   const handleNextQuestion = () => {
-    //if current question index is less than the total number 
+    //if current question index is less than the total number of trivia items, the state is updated by incrementing the current question index by 1
     if (currentQuestionIndex < triviaItems.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
+      //if at the last index, showSummary state is set to true and the Summary component is rendered
       setShowSummary(true);
     }
   }
 
+  
   const handleAnswerChange = (text) => {
     const newAnswers = [...userAnswers];
     newAnswers[currentQuestionIndex] = text;

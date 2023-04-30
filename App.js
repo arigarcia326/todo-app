@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react'
 import { StyleSheet, View, FlatList, KeyboardAvoidingView, TouchableOpacity, SafeAreaView, Platform} from 'react-native';
-import { CheckBox, Input, Text, Button } from '@rneui/themed'
-import { NavigationContainer, NavigationRouteContext } from '@react-navigation/native'
+import { Text, Button } from '@rneui/themed'
+import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import * as Font from 'expo-font'

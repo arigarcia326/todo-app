@@ -73,12 +73,13 @@ const styles = StyleSheet.create({
     fontSize: 25, 
     color: 'white',
     marginBottom: 50,
-    marginLeft: 20,
+    textAlign: 'center',
     marginTop: 20
   },
   pickerStyle: {
     height: 40,
     width: 200,
+    alignSelf: 'center'
   },
   nextButton: {
     backgroundColor: '#26A646',

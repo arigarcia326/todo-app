@@ -34,19 +34,20 @@ export default function DropDown({route}) {
   return (
     <View style={styles.container} >
       <Text style={styles.titleStyle}>{triviaName}</Text>
-      <View></View>
-      <Text style={styles.promptStyle}>{currentQuestion.prompt}</Text>
-      {currentQuestion.type === 'drop-down' && (
-        <Picker
-          style={styles.pickerStyle}
-          selectedValue={userAnswers[currentQuestionIndex]}
-          onValueChange={handleAnswerChange}
-        >
-          {currentQuestion.options.map((option, index) => (
-            <Picker.Item key={index} label={option.label} value={option.label} />
-          ))}
-        </Picker>
-      )}
+      <View style={styles.questionContainer}>
+        <Text style={styles.promptStyle}>{currentQuestion.prompt}</Text>
+        {currentQuestion.type === 'drop-down' && (
+          <Picker
+            style={styles.pickerStyle}
+            selectedValue={userAnswers[currentQuestionIndex]}
+            onValueChange={handleAnswerChange}
+          >
+            {currentQuestion.options.map((option, index) => (
+              <Picker.Item key={index} label={option.label} value={option.label} />
+            ))}
+          </Picker>
+        )}
+      </View>
       <View style={styles.buttonContainer}>
         <Button 
           title="Next"
@@ -71,6 +72,9 @@ const styles = StyleSheet.create({
     color: 'white',
     marginLeft: 20,
     marginTop: 20
+  },
+  questionContainer: {
+    justifyContent: 'center'
   },
   promptStyle: {
     fontSize: 25, 

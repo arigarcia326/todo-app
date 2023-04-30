@@ -20,7 +20,7 @@ export default function UserInput ({ route }) {
     }
   }
 
-  
+  //updates the state of the component with the text inputed by the user
   const handleAnswerChange = (text) => {
     const newAnswers = [...userAnswers];
     newAnswers[currentQuestionIndex] = text;

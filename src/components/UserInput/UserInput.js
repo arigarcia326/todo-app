@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
   },
   promptStyle: {
     color: 'white',
+    textAlign: 'center'
 
   },
   inputStyle: {

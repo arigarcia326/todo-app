@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View,  Picker } from 'react-native';
+import { View,  Picker, StyleSheet } from 'react-native';
 import { Text, Button } from '@rneui/themed'
 import Summary from '../Summary/Summary';
 
@@ -32,8 +32,8 @@ export default function DropDown({route}) {
   }
 
   return (
-    <View>
-      <Text>{triviaName}</Text>
+    <View style={styles.container} >
+      <Text style={styles.titleName}>{triviaName}</Text>
       <Text>{currentQuestion.prompt.replace('__option__', '')}</Text>
       {currentQuestion.type === 'drop-down' && (
         <Picker
@@ -49,3 +49,13 @@ export default function DropDown({route}) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    
+  },
+  titleStyle: {
+    
+  },
+  
+})

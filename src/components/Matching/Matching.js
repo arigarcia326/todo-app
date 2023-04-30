@@ -55,6 +55,8 @@ export default function Matching({ route }) {
           {item.answer.map((option, index) => (
             <Button
               key={`${item.prompt}_${option.option}`}
+              titleStyle= {styles.optionStyle}
+              title = {option.option}
               buttonStyle={{
                 backgroundColor:
                   selectedOption === option.option ? 'yellow' : matchedItems.find(
@@ -71,9 +73,7 @@ export default function Matching({ route }) {
                 borderRadius: 8
               }}
               onPress={() => handleMatch(option.option, selectedValue, index)}
-            >
-              <Text style={{ textAlign: 'center' }}>{option.option}</Text>
-            </Button>
+            />
           ))}
         </View>
         <View style={{ flex: 1, marginLeft: 8 }}>
@@ -136,6 +136,9 @@ const styles = StyleSheet.create({
   },
   checkStyle: {
     marginTop: 16
+  },
+  optionStyle: {
+    textAlign: 'center'
   }
   
 })

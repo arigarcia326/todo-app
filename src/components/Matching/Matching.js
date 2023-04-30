@@ -138,7 +138,8 @@ const styles = StyleSheet.create({
     marginTop: 16
   },
   optionStyle: {
-    textAlign: 'center'
+    textAlign: 'center',
+    color: 'black'
   }
   
 })

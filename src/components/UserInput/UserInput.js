@@ -3,6 +3,7 @@ import { Text, Input, Button } from '@rneui/themed'
 import { View, StyleSheet } from 'react-native';
 import Summary from '../Summary/Summary';
 
+
 export default function UserInput ({ route }) {
   const { triviaName, triviaItems } = route.params;
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -27,6 +28,7 @@ export default function UserInput ({ route }) {
     setUserAnswers(newAnswers);
   };
 
+  //if showSummary is true, the Summary component is rendered
   if (showSummary) {
     return <Summary triviaItems={triviaItems} userAnswers={userAnswers} />;
   }
@@ -41,6 +43,7 @@ export default function UserInput ({ route }) {
   );
 }
 
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

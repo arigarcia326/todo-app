@@ -105,9 +105,9 @@ export default function Matching({ route }) {
   );
 
   return (
-    <View style={{ padding: 16 }}>
+    <View style={styles.container}>
       <Text 
-        style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 16 }}>
+        style={styles.titleStyle}>
           {triviaName}
       </Text>
       <FlatList 
@@ -115,7 +115,7 @@ export default function Matching({ route }) {
         renderItem={renderItem} 
         keyExtractor={(item) => item.prompt} 
       />
-      <View style={{ marginTop: 16 }}>
+      <View style={styles.checkStyle}>
         <Button title="Check Answers" onPress={handleCheckAnswers} />
       </View>
     </View>
@@ -123,5 +123,18 @@ export default function Matching({ route }) {
 }
 
 const styles = StyleSheet.create({
-
+  container: {
+    flex: 1,
+    backgroundColor: '#190840' ,
+    padding: 16
+  },
+  titleStyle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 16
+  },
+  checkStyle: {
+    marginTop: 16
+  }
+  
 })

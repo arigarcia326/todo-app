@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Summary = ({ triviaItems, userAnswers }) => {
+export default function Summary ({ triviaItems, userAnswers }) {
   const score = triviaItems.reduce((acc, item, index) => {
     if (item.type === 'user-input' && item.correctAnswer === userAnswers[index]) {
       return acc + 1;
@@ -25,4 +25,3 @@ const Summary = ({ triviaItems, userAnswers }) => {
   );
 };
 
-export default Summary;

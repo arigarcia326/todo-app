@@ -1,5 +1,6 @@
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { render } from 'react-dom'
+import { Text, View, StyleSheet, FlatList } from 'react-native'
 
 export default function Summary ({ triviaItems, userAnswers }) {
 
@@ -30,22 +31,11 @@ export default function Summary ({ triviaItems, userAnswers }) {
   )
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.scoreStyle}>You scored: {score} out of {triviaItems.length}</Text>
-      <Text style={styles.titleStyle}>Here are the correct answers:</Text>
-      {triviaItems.map((item, index) => (
-        <View style={styles.questionsContainer}>
-          <Text 
-            key={index}
-            style={styles.promptStyle}
-          >
-            {item.prompt}
-          </Text>    
-          <Text style={styles.yourAnswerStyle}>You answered: {userAnswers[index]}</Text>    
-          <Text style={styles.correctAnswerStyle}>Correct Answer: {item.correctAnswer}</Text>
-        </View>
-      ))}
-    </View>
+    <FlatList
+      data={triviaItems}
+      renderItem={renderItem}
+      keyExtractor={(item, index) => index.toString()}
+    />
   )
 }
 

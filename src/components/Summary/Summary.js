@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 25,
     marginTop: 15,
-    paddingLeft: 20
+    marginLeft: 20
   },
   questionsContainer: {
     marginTop: 30
@@ -57,7 +57,9 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 20,
     fontWeight: 'bold',
-    paddingLeft: 20
+    marginLeft: 20,
+    marginTop: 30
+
   },
   yourAnswerStyle: {
     color: 'white',

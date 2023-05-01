@@ -1,15 +1,15 @@
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import React from 'react'
+import { Text, View, StyleSheet } from 'react-native'
 
 export default function Summary ({ triviaItems, userAnswers }) {
   const score = triviaItems.reduce((acc, item, index) => {
     if (item.type === 'user-input' && item.correctAnswer === userAnswers[index]) {
-      return acc + 1;
+      return acc + 1
     } else if (item.type === 'drop-down' && item.correctAnswer === userAnswers[index]) {
       return acc + 1
     }
     return acc;
-  }, 0);
+  }, 0)
 
   return (
     <View style={styles.container}>
@@ -28,12 +28,13 @@ export default function Summary ({ triviaItems, userAnswers }) {
         </View>
       ))}
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
-
+    flex: 1,
+    backgroundColor: '#190840' 
   },
   scoreStyle: {
 
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
 
   },
   correctAnswerStyle: {
-    
+
   }
 })
 

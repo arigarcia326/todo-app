@@ -14,15 +14,15 @@ export default function Matching({ route }) {
     if (selectedOption && selectedValue) {
       const matchedItem = { option: selectedOption, value: selectedValue, index }
       setMatchedItems([...matchedItems, matchedItem])
-      setSelectedOption(null)
-      setSelectedValue(null)
+      setSelectedOption(null);
+      setSelectedValue(null);
     } else if (selectedOption) {
-      setSelectedValue(value)
+      setSelectedValue(value);
     } else if (selectedValue) {
-      setSelectedOption(option)
+      setSelectedOption(option);
     } else {
-      setSelectedOption(option)
-      setSelectedValue(value)
+      setSelectedOption(option);
+      setSelectedValue(value);
     }
   }
 

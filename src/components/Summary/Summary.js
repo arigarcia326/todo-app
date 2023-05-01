@@ -82,7 +82,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
     marginTop: 20,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: '#26A646'
   }
 })
 

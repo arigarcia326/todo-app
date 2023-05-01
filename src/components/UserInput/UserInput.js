@@ -74,7 +74,9 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   inputStyle: {
-    color: 'white'
+    color: 'white',
+    alignSelf: 'center',
+    fontSize: 25
   },
   buttonStyle: {
     backgroundColor: '#26A646',

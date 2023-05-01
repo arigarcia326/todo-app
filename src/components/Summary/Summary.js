@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
     fontSize: 30,
     paddingTop: 20,
     marginTop: 20,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: '#190840'
   },
   titleStyle: {
     color: 'white',

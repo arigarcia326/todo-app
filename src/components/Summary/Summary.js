@@ -1,5 +1,4 @@
 import React from 'react'
-import { render } from 'react-dom'
 import { Text, View, StyleSheet, FlatList } from 'react-native'
 
 export default function Summary ({ triviaItems, userAnswers }) {

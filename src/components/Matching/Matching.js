@@ -11,20 +11,25 @@ export default function Matching({ route }) {
   const [selectedValue, setSelectedValue] = useState(null)
 
   const handleMatch = (option, value, index) => {
-    if (selectedOption && selectedValue) {
-      const matchedItem = { option: selectedOption, value: selectedValue, index }
-      setMatchedItems([...matchedItems, matchedItem])
-      setSelectedOption(null);
-      setSelectedValue(null);
-    } else if (selectedOption) {
-      setSelectedValue(value);
-    } else if (selectedValue) {
-      setSelectedOption(option);
-    } else {
-      setSelectedOption(option);
-      setSelectedValue(value);
-    }
+  const matchedOption = matchedItems.find(item => item.option === option && item.value !== null);
+  const matchedValue = matchedItems.find(item => item.value === value && item.option !== null);
+  if (matchedOption) {
+    // Update existing matched item with the same option
+    const updatedMatchedItems = [...matchedItems];
+    updatedMatchedItems[matchedItems.indexOf(matchedOption)] = { option, value: matchedOption.value, index };
+    setMatchedItems(updatedMatchedItems);
+  } else if (matchedValue) {
+    // Update existing matched item with the same value
+    const updatedMatchedItems = [...matchedItems];
+    updatedMatchedItems[matchedItems.indexOf(matchedValue)] = { option: matchedValue.option, value, index };
+    setMatchedItems(updatedMatchedItems);
+  } else {
+    // Add new matched item
+    setMatchedItems([...matchedItems, { option, value, index }]);
   }
+  setSelectedOption(null);
+  setSelectedValue(null);
+}
 
   const handleCheckAnswers = () => {
     const isAllMatched = matchedItems.length === triviaItems.length

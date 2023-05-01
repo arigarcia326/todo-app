@@ -50,13 +50,18 @@ const styles = StyleSheet.create({
 
   },
   promptStyle: {
-    color: 'white'
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold'
   },
   yourAnswerStyle: {
-    color: 'white'
+    color: 'white',
+    fontSize: 15
   },
   correctAnswerStyle: {
-    color: 'white'
+    color: 'white',
+    fontSize: 15,
+    fontWeight: 'bold'
   }
 })
 

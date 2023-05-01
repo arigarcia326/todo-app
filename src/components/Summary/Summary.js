@@ -60,7 +60,6 @@ const styles = StyleSheet.create({
   },
   questionsContainer: {
     marginTop: 20,
-    marginBottom: 30
   },
   promptStyle: {
     color: 'white',

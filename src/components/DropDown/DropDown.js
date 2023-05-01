@@ -18,7 +18,7 @@ export default function DropDown({route}) {
     }
   }
 
-  const handleAnswerChange = (selectedValue) => {
+  const answerChange = (selectedValue) => {
     const newAnswers = [...userAnswers]
     newAnswers[currentQuestionIndex] = selectedValue
     setUserAnswers(newAnswers)
@@ -40,7 +40,7 @@ export default function DropDown({route}) {
           <Picker
             style={styles.pickerStyle}
             selectedValue={userAnswers[currentQuestionIndex]}
-            onValueChange={handleAnswerChange}
+            onValueChange={answerChange}
           >
             {currentQuestion.options.map((option, index) => (
               <Picker.Item key={index} label={option.label} value={option.value} />

@@ -16,7 +16,17 @@ export default function Summary ({ triviaItems, userAnswers }) {
     <View style={styles.container}>
       <Text style={styles.scoreStyle}>You scored: {score} out of {triviaItems.length}</Text>
       <Text style={styles.titleStyle}>Here are the correct answers:</Text>
-    
+     <View style={styles.questionsContainer}>
+          <Text 
+            key={index}
+            style={styles.promptStyle}
+          >
+            {item.prompt}
+          </Text>    
+          <Text style={styles.yourAnswerStyle}>You answered: {userAnswers[index]}</Text>    
+          <Text style={styles.correctAnswerStyle}>Correct Answer: {item.correctAnswer}</Text>
+        </View>
+      </View>
   )
 
   return (

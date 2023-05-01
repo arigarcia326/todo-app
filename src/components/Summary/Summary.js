@@ -2,6 +2,7 @@ import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 
 export default function Summary ({ triviaItems, userAnswers }) {
+
   const score = triviaItems.reduce((acc, item, index) => {
     if (item.type === 'user-input' && item.correctAnswer === userAnswers[index]) {
       return acc + 1
@@ -10,6 +11,11 @@ export default function Summary ({ triviaItems, userAnswers }) {
     }
     return acc;
   }, 0)
+
+  const renderItem = ({ item, index }) => (
+
+    
+  )
 
   return (
     <View style={styles.container}>

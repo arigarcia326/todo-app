@@ -134,10 +134,10 @@ export const triviaData = [
       {
         prompt: 'His _____ was noticeable.',
         options: [
-          {label: 'absence'},
-          {label: 'absense'},
-          {label: 'absance'},
-          {label: 'abcense'}
+          {label: 'absence', value: 'absence'},
+          {label: 'absense', value: 'absense'},
+          {label: 'absance', value: 'absance'},
+          {label: 'abcense', value: 'abcense'}
         ],
         correctAnswer: 'absence',
         type: 'drop-down'

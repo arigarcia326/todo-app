@@ -34,25 +34,25 @@ export default function Summary ({ triviaItems, userAnswers }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#190840' 
+    backgroundColor: '#190840'
   },
   scoreStyle: {
 
   },
   titleStyle: {
-
+    color: 'white'
   },
   questionsContainer: {
 
   },
   promptStyle: {
-
+    color: 'white'
   },
   yourAnswerStyle: {
-
+    color: 'white'
   },
   correctAnswerStyle: {
-
+    color: 'white'
   }
 })
 

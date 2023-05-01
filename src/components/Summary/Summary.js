@@ -13,7 +13,9 @@ export default function Summary ({ triviaItems, userAnswers }) {
   }, 0)
 
   const renderItem = ({ item, index }) => (
-
+    <View style={styles.container}>
+      <Text style={styles.scoreStyle}>You scored: {score} out of {triviaItems.length}</Text>
+      <Text style={styles.titleStyle}>Here are the correct answers:</Text>
     
   )
 

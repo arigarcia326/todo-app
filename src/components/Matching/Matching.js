@@ -14,8 +14,6 @@ export default function Matching({ route }) {
     if (selectedOption && selectedValue) {
       const matchedItem = { option: selectedOption, value: selectedValue, index }
       setMatchedItems([...matchedItems, matchedItem])
-      setSelectedOption(null);
-      setSelectedValue(null);
     } else if (selectedOption) {
       setSelectedValue(value);
     } else if (selectedValue) {

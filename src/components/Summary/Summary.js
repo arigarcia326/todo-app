@@ -18,8 +18,8 @@ export default function Summary ({ triviaItems, userAnswers }) {
       {triviaItems.map((item, index) => (
         <View>
           <Text key={index}>{item.prompt}</Text>    
-          <Text>{userAnswers[index]}</Text>    
-          <Text>Answer: {item.correctAnswer}</Text>
+          <Text>You answered: {userAnswers[index]}</Text>    
+          <Text>Correct Answer: {item.correctAnswer}</Text>
         </View>
       ))}
     </View>

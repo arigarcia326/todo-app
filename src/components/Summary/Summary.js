@@ -12,14 +12,19 @@ export default function Summary ({ triviaItems, userAnswers }) {
   }, 0);
 
   return (
-    <View>
-      <Text>Your score is {score} out of {triviaItems.length}</Text>
-      <Text>Here are the correct answers:</Text>
+    <View style={styles.container}>
+      <Text style={styles.scoreStyle}>Your score is {score} out of {triviaItems.length}</Text>
+      <Text style={styles.titleStyle}>Here are the correct answers:</Text>
       {triviaItems.map((item, index) => (
-        <View>
-          <Text key={index}>{item.prompt}</Text>    
-          <Text>You answered: {userAnswers[index]}</Text>    
-          <Text>Correct Answer: {item.correctAnswer}</Text>
+        <View style={styles.questionsContainer}>
+          <Text 
+            key={index}
+            style={styles.promptStyle}
+          >
+            {item.prompt}
+          </Text>    
+          <Text style={styles.yourAnswerStyle}>You answered: {userAnswers[index]}</Text>    
+          <Text style={styles.correctAnswerStyle}>Correct Answer: {item.correctAnswer}</Text>
         </View>
       ))}
     </View>
@@ -27,6 +32,26 @@ export default function Summary ({ triviaItems, userAnswers }) {
 };
 
 const styles = StyleSheet.create({
-  
+  container: {
+
+  },
+  scoreStyle: {
+
+  },
+  titleStyle: {
+
+  },
+  questionsContainer: {
+
+  },
+  promptStyle: {
+
+  },
+  yourAnswerStyle: {
+
+  },
+  correctAnswerStyle: {
+    
+  }
 })
 

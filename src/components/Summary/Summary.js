@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#190840'
   },
   scoreStyle: {
-
+    color: 'white'
   },
   titleStyle: {
     color: 'white'

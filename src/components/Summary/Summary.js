@@ -32,7 +32,7 @@ export default function Summary ({ triviaItems, userAnswers }) {
       <FlatList
         data={triviaItems}
         renderItem={renderItem}
-        keyExtractor={(index) => index.toString()}
+        keyExtractor={(item, index) => index.toString()}
         contentContainerStyle={{ paddingBottom: 40 }}
       />
     </View>

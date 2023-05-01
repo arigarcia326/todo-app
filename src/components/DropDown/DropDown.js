@@ -74,9 +74,7 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   questionContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    marginTop: 150
   },
   promptStyle: {
     fontSize: 25, 
@@ -86,9 +84,10 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   pickerStyle: {
-    height: 40,
+    height: 50,
     width: 200,
-    alignSelf: 'center'
+    alignSelf: 'center',
+    fontSize: 25
   },
   nextButton: {
     backgroundColor: '#26A646',

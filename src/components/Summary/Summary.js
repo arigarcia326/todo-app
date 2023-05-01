@@ -9,7 +9,7 @@ export default function Summary ({ triviaItems, userAnswers }) {
     } else if (item.type === 'drop-down' && item.correctAnswer === userAnswers[index]) {
       return acc + 1
     }
-    return acc;
+    return acc
   }, 0)
 
   const renderItem = ({ item, index }) => (

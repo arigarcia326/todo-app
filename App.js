@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: '#DB2EF2',
     borderStyle: 'solid',
-    borderWidth: 3,
+    borderWidth: 4,
     backgroundColor: 'none'
   }
 

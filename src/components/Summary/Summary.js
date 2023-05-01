@@ -37,10 +37,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#190840'
   },
   scoreStyle: {
-    color: 'white'
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: '30',
+    paddingTop: 20
   },
   titleStyle: {
-    color: 'white'
+    color: 'white',
+    
   },
   questionsContainer: {
 

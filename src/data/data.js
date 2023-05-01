@@ -7,35 +7,30 @@ export const triviaData = [
         prompt: 'What is 6 + 11?',
         answer: "",
         type: 'user-input',
-        userAnswer: [],
         correctAnswer: '17'
       },
       {
         prompt: 'What is 2 x 4?',
         answer: "",
         type: 'user-input',
-        userAnswer: [],
         correctAnswer: '8'
       },
       {
         prompt: 'What is 15 / 3?',
         answer: "",
         type: 'user-input',
-        userAnswer: [],
         correctAnswer: '5'
       },
       {
         prompt: 'What is 2 + 4 + 15?',
         answer: "",
         type: 'user-input',
-        userAnswer: [],
         correctAnswer: '21'
       },
       {
         prompt: 'What is 2 - 4?',
         answer: "",
         type: 'user-input',
-        userAnswer: [],
         correctAnswer: '-2'
       }
     ]

@@ -156,10 +156,10 @@ export const triviaData = [
       {
         prompt: 'I _____ know what I am doing!',
         options: [
-          {label: 'definately'},
-          {label: 'definitly'},
-          {label: 'definatly'},
-          {label: 'definitely'}
+          {label: 'definately', value: 'definately'},
+          {label: 'definitly', value: 'definitly'},
+          {label: 'definatly', value: 'definatly'},
+          {label: 'definitely', value: 'definitely'}
         ],
         correctAnswer: 'definitely',
         type: 'drop-down'
@@ -167,10 +167,10 @@ export const triviaData = [
       {
         prompt: 'I work hard to _____ success.',
         options: [
-          {label: 'garantee'},
-          {label: 'guarantee'},
-          {label: 'garanty'},
-          {label: 'garentee'}
+          {label: 'garantee', value: 'garantee'},
+          {label: 'guarantee', value: 'guarantee'},
+          {label: 'garanty', value: 'garanty'},
+          {label: 'garentee', value: 'garentee'}
         ],
         correctAnswer: 'guarantee',
         type: 'drop-down'

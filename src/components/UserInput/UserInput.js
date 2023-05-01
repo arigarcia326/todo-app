@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginLeft: 20,
     marginTop: 20,
-    textAlign: 'center',
     fontWeight: 'bold'
   },
   promptStyle: {

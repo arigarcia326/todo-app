@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
 export default function Summary ({ triviaItems, userAnswers }) {
   const score = triviaItems.reduce((acc, item, index) => {
@@ -25,4 +25,8 @@ export default function Summary ({ triviaItems, userAnswers }) {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  
+})
 

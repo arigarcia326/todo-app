@@ -192,7 +192,7 @@ export const triviaData = [
         type: 'drop-down'
       },
       {
-        prompt: 'He _____ extremely tired.',
+        prompt: 'He _____ extremely tired today.',
         options: [
           {label: 'looks'},
           {label: 'looking'},

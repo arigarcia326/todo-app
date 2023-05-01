@@ -43,7 +43,7 @@ export default function Matching({ route }) {
     } else {
       alert('Not all items are matched.')
     }
-  };
+  }
 
   const renderItem = ({ item }) => (
     <View style={styles.matchingContainer}>

@@ -22,7 +22,7 @@ export default function Matching({ route }) {
       setSelectedOption(option);
     } else {
       setSelectedOption(option);
-      setSelectedValue(value);
+      setSelectedValue(value)
     }
   }
 

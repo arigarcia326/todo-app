@@ -11,7 +11,7 @@ export default function UserInput ({ route }) {
   const [showSummary, setShowSummary] = useState(false)
 
   // updates the state of the component based on the current index of the question being shown
-  const handleNextQuestion = () => {
+  const nextQuestion = () => {
     //if current question index is less than the total number of trivia items, the state is updated by incrementing the current question index by 1
     if (currentQuestionIndex < triviaItems.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
@@ -22,7 +22,7 @@ export default function UserInput ({ route }) {
   }
 
   //updates the state of the component with the text inputed by the user
-  const handleAnswerChange = (text) => {
+  const answerChange = (text) => {
     const newAnswers = [...userAnswers]
     newAnswers[currentQuestionIndex] = text
     setUserAnswers(newAnswers)
@@ -42,11 +42,11 @@ export default function UserInput ({ route }) {
           inputStyle={styles.inputStyle}
           placeholder='Enter answer here'
           value={userAnswers[currentQuestionIndex]} 
-          onChangeText={handleAnswerChange} 
+          onChangeText={answerChange} 
         />
       </View>
       <View style={styles.buttonContainer}>
-        <Button buttonStyle={styles.buttonStyle} titleStyle={styles.buttonTitleStyle} title="Next" onPress={handleNextQuestion} />
+        <Button buttonStyle={styles.buttonStyle} titleStyle={styles.buttonTitleStyle} title="Next" onPress={nextQuestion} />
       </View>
     </View>
   )

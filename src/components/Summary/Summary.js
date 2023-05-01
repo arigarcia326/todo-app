@@ -13,7 +13,7 @@ export default function Summary ({ triviaItems, userAnswers }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.scoreStyle}>Your score is {score} out of {triviaItems.length}</Text>
+      <Text style={styles.scoreStyle}>You scored: {score} out of {triviaItems.length}</Text>
       <Text style={styles.titleStyle}>Here are the correct answers:</Text>
       {triviaItems.map((item, index) => (
         <View style={styles.questionsContainer}>

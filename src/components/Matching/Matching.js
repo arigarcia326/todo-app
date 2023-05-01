@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import { Text, Button } from '@rneui/themed'
-import { View, FlatList, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, FlatList, StyleSheet } from 'react-native'
 
 
 export default function Matching({ route }) {
-  const { triviaName, triviaItems } = route.params;
+  const { triviaName, triviaItems } = route.params
 
-  const [matchedItems, setMatchedItems] = useState([]);
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [selectedValue, setSelectedValue] = useState(null);
+  const [matchedItems, setMatchedItems] = useState([])
+  const [selectedOption, setSelectedOption] = useState(null)
+  const [selectedValue, setSelectedValue] = useState(null)
 
   const handleMatch = (option, value, index) => {
     if (selectedOption && selectedValue) {
-      const matchedItem = { option: selectedOption, value: selectedValue, index };
-      setMatchedItems([...matchedItems, matchedItem]);
+      const matchedItem = { option: selectedOption, value: selectedValue, index }
+      setMatchedItems([...matchedItems, matchedItem])
       setSelectedOption(null);
       setSelectedValue(null);
     } else if (selectedOption) {
@@ -24,10 +24,10 @@ export default function Matching({ route }) {
       setSelectedOption(option);
       setSelectedValue(value);
     }
-  };
+  }
 
   const handleCheckAnswers = () => {
-    const isAllMatched = matchedItems.length === triviaItems.length;
+    const isAllMatched = matchedItems.length === triviaItems.length
     if (isAllMatched) {
       const isAllCorrect = matchedItems.every(
         (item) =>
@@ -39,11 +39,11 @@ export default function Matching({ route }) {
         matchedItems: matchedItems,
         isAllCorrect: isAllCorrect
       };
-      navigation.navigate('Summary', { result });
+      navigation.navigate('Summary', { result })
     } else {
-      alert('Not all items are matched.');
+      alert('Not all items are matched.')
     }
-  };
+  }
 
   const renderItem = ({ item }) => (
     <View style={styles.matchingContainer}>
@@ -103,7 +103,7 @@ export default function Matching({ route }) {
         </View>
       </View>
     </View>
-  );
+  )
 
   return (
     <View style={styles.container}>
@@ -125,7 +125,7 @@ export default function Matching({ route }) {
         />
       </View>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({

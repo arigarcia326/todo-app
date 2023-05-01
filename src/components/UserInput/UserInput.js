@@ -36,13 +36,15 @@ export default function UserInput ({ route }) {
   return (
     <View style={styles.container}>
       <Text style={styles.titleStyle}>{triviaName}</Text>
-      <Text style={styles.promptStyle}>{triviaItems[currentQuestionIndex].prompt}</Text>
-      <Input 
-        inputStyle={styles.inputStyle}
-        placeholder='Enter answer here'
-        value={userAnswers[currentQuestionIndex]} 
-        onChangeText={handleAnswerChange} 
-      />
+      <View style={styles.questionContainer}>
+        <Text style={styles.promptStyle}>{triviaItems[currentQuestionIndex].prompt}</Text>
+        <Input 
+          inputStyle={styles.inputStyle}
+          placeholder='Enter answer here'
+          value={userAnswers[currentQuestionIndex]} 
+          onChangeText={handleAnswerChange} 
+        />
+      </View>
       <View style={styles.buttonContainer}>
         <Button buttonStyle={styles.buttonStyle} titleStyle={styles.buttonTitleStyle} title="Next" onPress={handleNextQuestion} />
       </View>
@@ -85,7 +87,11 @@ const styles = StyleSheet.create({
     left: 16,
     right: 16,
   },
+  questionContainer: {
+     marginTop: 150
+  },
   buttonTitleStyle: {
-
+    fontSize: 20,
+    fontWeight: 'bold'
   }
 })

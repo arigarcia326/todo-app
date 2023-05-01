@@ -1,1 +1,1 @@
-# todo-app
+# trivia-app

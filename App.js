@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import * as Font from 'expo-font'
 import FontAwesome from '@expo/vector-icons/FontAwesome'
 import { triviaData } from './src/data/data';
-import UserInput from './src/components/userInput/userInput';
+import UserInput from './src/components/UserInput/UserInput';
 import Matching from './src/components/Matching/Matching';
 import DropDown from './src/components/DropDown/DropDown';
 import Summary from './src/components/Summary/Summary';

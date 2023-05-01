@@ -57,11 +57,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#190840',
   },
   titleStyle: {
-    color: 'white',
     fontSize: 30,
+    fontWeight: 'bold',
+    marginBottom: 16,
+    color: 'white',
     marginLeft: 20,
-    marginTop: 20,
-    fontWeight: 'bold'
+    marginTop: 20
   },
   promptStyle: {
     fontSize: 25, 

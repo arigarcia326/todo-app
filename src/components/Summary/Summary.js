@@ -33,6 +33,7 @@ export default function Summary ({ triviaItems, userAnswers }) {
         data={triviaItems}
         renderItem={renderItem}
         keyExtractor={(item, index) => index.toString()}
+        contentContainerStyle={{ paddingBottom: 20 }}
       />
     </View>
   )

@@ -43,7 +43,7 @@ export default function DropDown({route}) {
             onValueChange={handleAnswerChange}
           >
             {currentQuestion.options.map((option, index) => (
-              <Picker.Item key={index} label={option.label} value={option.label} />
+              <Picker.Item key={index} label={option.label} value={option.value} />
             ))}
           </Picker>
         )}

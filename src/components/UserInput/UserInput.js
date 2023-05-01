@@ -37,7 +37,12 @@ export default function UserInput ({ route }) {
     <View style={styles.container}>
       <Text style={styles.titleStyle}>{triviaName}</Text>
       <Text style={styles.promptStyle}>{triviaItems[currentQuestionIndex].prompt}</Text>
-      <Input inputStyle={styles.inputStyle} value={userAnswers[currentQuestionIndex]} onChangeText={handleAnswerChange} />
+      <Input 
+        inputStyle={styles.inputStyle}
+        placeholder='Enter answer here'
+        value={userAnswers[currentQuestionIndex]} 
+        onChangeText={handleAnswerChange} 
+      />
       <View style={styles.buttonContainer}>
         <Button buttonStyle={styles.buttonStyle} titleStyle={styles.buttonTitleStyle} title="Next" onPress={handleNextQuestion} />
       </View>

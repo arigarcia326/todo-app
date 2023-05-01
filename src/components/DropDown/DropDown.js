@@ -10,7 +10,7 @@ export default function DropDown({route}) {
   const [userAnswers, setUserAnswers] = useState(Array(triviaItems.length).fill(""))
   const [showSummary, setShowSummary] = useState(false)
 
-  const handleNextQuestion = () => {
+  const nextQuestion = () => {
     if (currentQuestionIndex < triviaItems.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
     } else {
@@ -53,7 +53,7 @@ export default function DropDown({route}) {
           title="Next"
           buttonStyle={styles.nextButton}
           titleStyle={styles.nextTitleStyle}
-          onPress={handleNextQuestion} 
+          onPress={nextQuestion} 
         />
       </View>
     </View>

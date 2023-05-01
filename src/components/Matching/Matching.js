@@ -24,7 +24,7 @@ export default function Matching({ route }) {
     }
   }
 
-  const handleCheckAnswers = () => {
+  const checkAnswers = () => {
     const isAllMatched = matchedItems.length === triviaItems.length
     if (isAllMatched) {
       const isAllCorrect = matchedItems.every(
@@ -119,7 +119,7 @@ export default function Matching({ route }) {
           title="Check Answers" 
           titleStyle={styles.checkTitleStyle}
           buttonStyle= {styles.checkStyle}
-          onPress={handleCheckAnswers} 
+          onPress={checkAnswers} 
         />
       </View>
     </View>

@@ -145,10 +145,10 @@ export const triviaData = [
       {
         prompt: 'I want to make sure I _____ her presence.',
         options: [
-          {label: 'acknowlege'},
-          {label: 'aknowledge'},
-          {label: 'acknowledge'},
-          {label: 'acknowlege'}
+          {label: 'acknowlege', value: 'acknowlege'},
+          {label: 'aknowledge', value:  'aknowledge'},
+          {label: 'acknowledge', value: 'acknowledge'},
+          {label: 'acknowlege', value: 'acknowlege'}
         ],
         correctAnswer: 'acknowledge',
         type: 'drop-down'

@@ -139,7 +139,7 @@ export const triviaData = [
           {label: 'absance'},
           {label: 'abcense'}
         ],
-        correctAnswer: {label: 'absence'},
+        correctAnswer: 'absence',
         type: 'drop-down'
       },
       {
@@ -150,7 +150,7 @@ export const triviaData = [
           {label: 'acknowledge'},
           {label: 'acknowlege'}
         ],
-        correctAnswer:{label: 'acknowledge'},
+        correctAnswer: 'acknowledge',
         type: 'drop-down'
       },
       {
@@ -161,7 +161,7 @@ export const triviaData = [
           {label: 'definatly'},
           {label: 'definitely'}
         ],
-        correctAnswer:{label: 'definitely'},
+        correctAnswer: 'definitely',
         type: 'drop-down'
       },
       {
@@ -172,7 +172,7 @@ export const triviaData = [
           {label: 'garanty'},
           {label: 'garentee'}
         ],
-        correctAnswer:{label: 'guarantee'},
+        correctAnswer: 'guarantee',
         type: 'drop-down'
       }
     ]

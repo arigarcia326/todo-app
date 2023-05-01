@@ -7,7 +7,7 @@ import Summary from '../Summary/Summary'
 export default function DropDown({route}) {
   const { triviaName, triviaItems } = route.params
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const [userAnswers, setUserAnswers] = useState(Array(triviaItems.length).fill(""))
+  const [userAnswers, setUserAnswers] = useState(Array(triviaItems[0].length).fill(""))
   const [showSummary, setShowSummary] = useState(false)
 
   const handleNextQuestion = () => {

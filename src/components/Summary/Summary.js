@@ -17,7 +17,7 @@ const Summary = ({ triviaItems, userAnswers }) => {
       <Text>Here are the correct answers:</Text>
       {triviaItems.map((item, index) => (
         <View>
-          <Text>key={index}{item.prompt}</Text> 
+          <Text>key={index}{item.prompt}</Text>        
           <Text>Answer: {item.correctAnswer}</Text>
         </View>
       ))}

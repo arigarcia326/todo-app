@@ -166,10 +166,7 @@ const styles = StyleSheet.create({
   buttonStyle: {
     width: 300,
     height: 70,
-    borderRadius: 10,
-    borderColor: '#220859',
-    borderStyle: 'solid',
-    borderWidth: 4,
+    borderRadius: 15,
     backgroundColor: '#DB2EF2'
   }
 

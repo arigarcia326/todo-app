@@ -39,12 +39,12 @@ const styles = StyleSheet.create({
   scoreStyle: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: '30',
+    fontSize: 30,
     paddingTop: 20
   },
   titleStyle: {
     color: 'white',
-    
+    fontSize: 25
   },
   questionsContainer: {
 

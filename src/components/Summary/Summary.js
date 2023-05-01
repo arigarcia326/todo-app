@@ -51,13 +51,14 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     marginTop: 20,
     textAlign: 'center',
-    color: '#190840'
+    color: '#DB2EF2'
   },
   titleStyle: {
     color: 'white',
     fontSize: 25,
     marginTop: 15,
-    marginLeft: 20
+    marginLeft: 20,
+    textAlign: 'center'
   },
   questionsContainer: {
     marginTop: 20,

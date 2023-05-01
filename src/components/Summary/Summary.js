@@ -40,14 +40,16 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 30,
-    paddingTop: 20
+    paddingTop: 20,
+    marginTop: 20
   },
   titleStyle: {
     color: 'white',
-    fontSize: 25
+    fontSize: 25,
+    marginTop: 15
   },
   questionsContainer: {
-
+    marginTop: 30
   },
   promptStyle: {
     color: 'white',
@@ -56,12 +58,14 @@ const styles = StyleSheet.create({
   },
   yourAnswerStyle: {
     color: 'white',
-    fontSize: 15
+    fontSize: 15,
+    marginTop: 20
   },
   correctAnswerStyle: {
     color: 'white',
     fontSize: 15,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginTop: 20
   }
 })
 

@@ -15,8 +15,11 @@ export default function Matching({ route }) {
 
     let matches = [];
     matches = matchedItems;
+    
+    matches.push({option: option, value:value});
+    setMatchedItems(matches);
 
-    matches.push({});
+
     // if (selectedOption && selectedValue) {
     //   const matchedItem = { option: selectedOption, value: selectedValue, index }
     //   setMatchedItems([...matchedItems, matchedItem])

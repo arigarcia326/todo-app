@@ -37,7 +37,7 @@ export default function Matching({ route, navigation }) {
     setMatchedItems(matches);
   }
 
-  
+  //called when user hits "Check Answers"
   const checkAnswers = () => {
     const isAllMatched = matchedItems.length === triviaItems[0].answer.length
     if (isAllMatched) {
@@ -54,8 +54,10 @@ export default function Matching({ route, navigation }) {
       console.log(result)
      //setUserAnswers(result)
     //navigation.navigate('Summary', { triviaItems: triviaItems, userAnswers: result })
+    //User has matched all items
     alert('All Matched!')
     } else {
+      // ERROR: user has not matched all items
       alert('Not all items are matched.')
     }
   }
@@ -135,6 +137,7 @@ export default function Matching({ route, navigation }) {
   )
 }
 
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

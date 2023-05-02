@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, FlatList } from 'react-native'
 
 export default function Summary ({ triviaItems, userAnswers }) {
 
+  //checks item type and calculates score
   const score = triviaItems.reduce((acc, item, index) => {
     if (item.type === 'user-input' && item.correctAnswer === userAnswers[index]) {
       return acc + 1

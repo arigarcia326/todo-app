@@ -23,11 +23,14 @@ export default function Matching({ route }) {
     console.log('value', value)
     //if(matchedItems.some(i => i.index === selectedIndex)){
     if(value !== null){
+      console.log('value not null')
       match = {option: selectedOption, value:value, index: selectedIndex}; 
       matches = matchedItems.filter( i => i.index !== selectedIndex);
       setSelectedIndex(-1);
       setSelectedOption(null)
     }else{
+      console.log('value  null')
+      match = {option: option, value: null, index: index};
       matches = matchedItems;
       setSelectedOption(option);
       setSelectedIndex(index);

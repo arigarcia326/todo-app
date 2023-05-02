@@ -16,22 +16,16 @@ export default function Matching({ route }) {
     let matches = [];
     matches = matchedItems;
 
-    let match = {option: option, value:value, index: index};
+    let match = {option: selectedOption, value:value, index: selectedIndex}; 
+    matches = matchedItems.filter( i => i.index !== selectedIndex);
 
-    let deleteMatch = matchedItems.find(i => option === option);
-
-    if(deleteMatch !== undefined) 
-    { 
-      matches = matchItems.filter( i => i.index !== )
-    }
-
-      if(matches.find(i => option === option)=== true){
-        let de = {option }
-      } 
-    matches.push({option: option, value:value, index: index});
+    matches.push(match);
     setMatchedItems(matches);
 
-    setSelectedIndex(index);
+    if(option !== undefined && opiotn !== null){
+      setSelectedOption()
+      setSelectedIndex(index);
+    }
 
 
     // if (selectedOption && selectedValue) {

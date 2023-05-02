@@ -21,15 +21,16 @@ export default function DropDown({route}) {
     }
   }
 
+  //updates the state of the component with the selected value
   const answerChange = (selectedValue) => {
     const newAnswers = [...userAnswers]
     newAnswers[currentQuestionIndex] = selectedValue
     setUserAnswers(newAnswers)
   }
 
-
   const currentQuestion = triviaItems[currentQuestionIndex]
 
+  //if showSummary is true, the Summary component is rendered
   if (showSummary) {
     return <Summary triviaItems={triviaItems} userAnswers={userAnswers}/>
   }
@@ -63,6 +64,7 @@ export default function DropDown({route}) {
   )
 }
 
+//styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

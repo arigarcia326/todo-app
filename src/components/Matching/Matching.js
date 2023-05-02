@@ -44,8 +44,9 @@ export default function Matching({ route, navigation }) {
         matchedItems: matchedItems,
         isAllCorrect: isAllCorrect
       };
+      console.log(result)
      setUserAnswers(result)
-      navigation.navigate('Summary', { triviaItems: triviaItems, userAnswers: result })
+      navigation.navigate('Summary', { triviaItems: triviaItems, userAnswers: result, index: index })
     } else {
       alert('Not all items are matched.')
     }

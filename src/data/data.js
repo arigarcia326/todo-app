@@ -118,12 +118,12 @@ export const triviaData = [
         type: 'matching',
         userAnswer: [],
         correctAnswer: [
-          {option: 'Thomas Edison', value: 'light bulb'},
-          {option: 'Alexander Graham Bell', value: 'telephone'},
-          {option: 'Gabriel Farenheit', value: 'thermometer'},
-          {option: 'Peter Henlein', value: 'watch' },
-          {option: 'Samuel Morse', value: 'telegraph'},
-          {option: 'Karl Benz', value: 'automobile'}
+          {option: 'Thomas Edison', value: 'light bulb', index: ''},
+          {option: 'Alexander Graham Bell', value: 'telephone', index: ''},
+          {option: 'Gabriel Farenheit', value: 'thermometer', index: ''},
+          {option: 'Peter Henlein', value: 'watch', index: '' },
+          {option: 'Samuel Morse', value: 'telegraph', index: ''},
+          {option: 'Karl Benz', value: 'automobile', index: ''}
         ]
       }
     ]

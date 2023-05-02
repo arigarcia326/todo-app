@@ -58,7 +58,7 @@ export default function Matching({ route }) {
 
 
     console.log('matched items length', matchedItems.length);
-    let test = route.params.triviaItems;
+    let test = route;
     console.log('trivia items', test);
 
 

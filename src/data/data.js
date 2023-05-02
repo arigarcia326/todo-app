@@ -87,7 +87,7 @@ export const triviaData = [
           {option: 'Utah', value: 'Salt Lake City'},
           {option: 'New Jersey', value: 'Trenton'},
           {option: 'Oregon', value: 'Salem'},
-          {option: 'Boston', value: 'Massachusetts'}
+          {option: 'Massachusetts', value: 'Boston'}
         ],
         type: 'matching',
         userAnswer: [],

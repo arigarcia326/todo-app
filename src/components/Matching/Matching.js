@@ -20,12 +20,12 @@ export default function Matching({ route }) {
     if(value !== null){
       match = {option: selectedOption, value:value, index: selectedIndex}; 
       matches = matchedItems.filter( i => i.index !== selectedIndex);
-      selectedIndex(-1);
-      selectedOption(null)
+      setSelectedIndex(-1);
+      setSelectedOption(null)
     }else{
       matches = matchedItems;
-      selectedOption(option);
-      selectedIndex(index);
+      setSelectedOption(option);
+      setSelectedIndex(index);
     }
 
 

@@ -14,9 +14,16 @@ export default function Matching({ route }) {
   const handleMatch = (option, value, index) => {
 
     let matches = [];
+    let match = {option: '', value:'', index: -1};
 
-    let match = {option: selectedOption, value:value, index: selectedIndex}; 
-    matches = matchedItems.filter( i => i.index !== selectedIndex);
+    if(matchedItems.some(i => i.index === selectedIndex)){
+      match = {option: selectedOption, value:value, index: selectedIndex}; 
+      matches = matchedItems.filter( i => i.index !== selectedIndex);
+    }else{
+      matches = matchedItems;
+    }
+
+
 
     matches.push(match);
     setMatchedItems(matches);

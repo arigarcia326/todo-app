@@ -16,6 +16,11 @@ export default function Matching({ route }) {
     let matches = [];
     let match = {option: '', value:'', index: -1};
 
+    console.log('option', option)
+
+    console.log('index', index)
+
+    console.log('value', value)
     //if(matchedItems.some(i => i.index === selectedIndex)){
     if(value !== null){
       match = {option: selectedOption, value:value, index: selectedIndex}; 

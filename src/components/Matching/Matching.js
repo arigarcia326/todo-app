@@ -5,7 +5,6 @@ import { View, FlatList, StyleSheet } from 'react-native'
 
 export default function Matching({ route }) {
   const { triviaName, triviaItems } = route.params
-
   const [matchedItems, setMatchedItems] = useState([])
   const [selectedOption, setSelectedOption] = useState(null)
   const [selectedValue, setSelectedValue] = useState(null)

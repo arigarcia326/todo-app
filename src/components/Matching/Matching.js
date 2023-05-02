@@ -11,17 +11,18 @@ export default function Matching({ route }) {
   const matchingColors = ['#F24968', '#6929F2','#9B72F2','#14D990','#F2B807', '#F22ED2']
 
   const handleMatch = (option, value, index) => {
-    if (selectedOption && selectedValue) {
-      const matchedItem = { option: selectedOption, value: selectedValue, index }
-      setMatchedItems([...matchedItems, matchedItem])
-    } else if (selectedOption) {
-      setSelectedValue(value);
-    } else if (selectedValue) {
-      setSelectedOption(option);
-    } else {
-      setSelectedOption(option);
-      setSelectedValue(value);
-    }
+    // if (selectedOption && selectedValue) {
+    //   const matchedItem = { option: selectedOption, value: selectedValue, index }
+    //   setMatchedItems([...matchedItems, matchedItem])
+    // } else if (selectedOption) {
+    //   setSelectedValue(value);
+    // } else if (selectedValue) {
+    //   setSelectedOption(option);
+    // } else {
+    //   setSelectedOption(option);
+    //   setSelectedValue(value);
+    // }
+    
   }
 
   const checkAnswers = () => {

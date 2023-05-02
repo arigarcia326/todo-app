@@ -8,9 +8,15 @@ export default function Matching({ route }) {
   const [matchedItems, setMatchedItems] = useState([])
   const [selectedOption, setSelectedOption] = useState(null)
   const [selectedValue, setSelectedValue] = useState(null)
+  const [selectedIndex, setSelectedIndex] = useState(null)
   const matchingColors = ['#F24968', '#6929F2','#9B72F2','#14D990','#F2B807', '#F22ED2']
 
   const handleMatch = (option, value, index) => {
+
+    let matches = [];
+    matches = matchedItems;
+
+    matches.push({});
     // if (selectedOption && selectedValue) {
     //   const matchedItem = { option: selectedOption, value: selectedValue, index }
     //   setMatchedItems([...matchedItems, matchedItem])
@@ -22,7 +28,7 @@ export default function Matching({ route }) {
     //   setSelectedOption(option);
     //   setSelectedValue(value);
     // }
-    
+
   }
 
   const checkAnswers = () => {

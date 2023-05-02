@@ -8,3 +8,4 @@ This project is a simple trivia app containing different subjects to choose from
 
 ## GitHub Pages site
 View my project here: 
+https://arigarcia326.github.io/trivia-app/

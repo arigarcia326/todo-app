@@ -14,7 +14,6 @@ export default function Matching({ route }) {
   const handleMatch = (option, value, index) => {
 
     let matches = [];
-    matches = matchedItems;
 
     let match = {option: selectedOption, value:value, index: selectedIndex}; 
     matches = matchedItems.filter( i => i.index !== selectedIndex);
@@ -22,7 +21,7 @@ export default function Matching({ route }) {
     matches.push(match);
     setMatchedItems(matches);
 
-    if(option !== undefined && opiotn !== null){
+    if(option !== undefined && option !== null){
       setSelectedOption()
       setSelectedIndex(index);
     }

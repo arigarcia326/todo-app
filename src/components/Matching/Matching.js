@@ -12,6 +12,7 @@ export default function Matching({ route, navigation }) {
   //const [userAnswers, setUserAnswers] = useState(Array(triviaItems.length).fill(""));
   const matchingColors = ['#F24968', '#6929F2','#9B72F2','#14D990','#F2B807', '#F22ED2']
 
+  
   const handleMatch = (option, value, index) => {
     let matches = [];
     let match = {option: '', value:'', index: -1};

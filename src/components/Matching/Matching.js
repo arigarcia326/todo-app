@@ -18,7 +18,7 @@ export default function Matching({ route, navigation }) {
     let matches = [];
     let match = {option: '', value:'', index: -1};
 
-    //
+    //if value is not null, the user has selected an option
     if(value !== null){
       match = {option: selectedOption, value:value, index: selectedIndex}; 
       matches = matchedItems.filter( i => i.index !== selectedIndex);

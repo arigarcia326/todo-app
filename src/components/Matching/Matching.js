@@ -114,7 +114,7 @@ export default function Matching({ route }) {
           ))}
         </View>
         <View style={{ flex: 1, marginLeft: 8 }}>
-          {item.answer.sort((a,b) => a - b).map((value, index) => (
+          {item.answer.sort().map((value, index) => (
             <Button
               key={`${item.prompt}_${value.value}`}
               title = {value.value}

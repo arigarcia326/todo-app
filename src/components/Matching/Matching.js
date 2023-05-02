@@ -12,56 +12,25 @@ export default function Matching({ route, navigation }) {
   const matchingColors = ['#F24968', '#6929F2','#9B72F2','#14D990','#F2B807', '#F22ED2']
 
   const handleMatch = (option, value, index) => {
-
     let matches = [];
     let match = {option: '', value:'', index: -1};
 
-
-    //if(matchedItems.some(i => i.index === selectedIndex)){
     if(value !== null){
-  
       match = {option: selectedOption, value:value, index: selectedIndex}; 
       matches = matchedItems.filter( i => i.index !== selectedIndex);
       setSelectedIndex(-1);
       setSelectedOption(null)
     }else{
-   
       match = {option: option, value: null, index: index};
       matches = matchedItems;
       setSelectedOption(option);
       setSelectedIndex(index);
     }
-
-
-
     matches.push(match);
     setMatchedItems(matches);
-
-  
-
-
-    // if (selectedOption && selectedValue) {
-    //   const matchedItem = { option: selectedOption, value: selectedValue, index }
-    //   setMatchedItems([...matchedItems, matchedItem])
-    // } else if (selectedOption) {
-    //   setSelectedValue(value);
-    // } else if (selectedValue) {
-    //   setSelectedOption(option);
-    // } else {
-    //   setSelectedOption(option);
-    //   setSelectedValue(value);
-    // }
-
   }
 
   const checkAnswers = () => {
-
-
-    console.log('matched items length', matchedItems.length);
-    
-    console.log('trivia items', triviaItems[0].answer.length);
-
-
     const isAllMatched = matchedItems.length === triviaItems[0].answer.length
     if (isAllMatched) {
       const isAllCorrect = matchedItems.every(
@@ -74,8 +43,6 @@ export default function Matching({ route, navigation }) {
         matchedItems: matchedItems,
         isAllCorrect: isAllCorrect
       };
-
-      
       navigation.navigate('Summary', { result })
     } else {
       alert('Not all items are matched.')

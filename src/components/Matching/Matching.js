@@ -21,6 +21,8 @@ export default function Matching({ route }) {
       matches = matchedItems.filter( i => i.index !== selectedIndex);
     }else{
       matches = matchedItems;
+      selectedOption(option);
+      selectedIndex(index);
     }
 
 
@@ -28,10 +30,7 @@ export default function Matching({ route }) {
     matches.push(match);
     setMatchedItems(matches);
 
-    if(option !== undefined && option !== null){
-      setSelectedOption()
-      setSelectedIndex(index);
-    }
+  
 
 
     // if (selectedOption && selectedValue) {

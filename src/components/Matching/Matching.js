@@ -3,7 +3,7 @@ import { Text, Button } from '@rneui/themed'
 import { View, FlatList, StyleSheet } from 'react-native'
 
 
-export default function Matching({ route }) {
+export default function Matching({ route, navigation }) {
   const { triviaName, triviaItems } = route.params
   const [matchedItems, setMatchedItems] = useState([])
   const [selectedOption, setSelectedOption] = useState(null)

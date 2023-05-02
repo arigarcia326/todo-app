@@ -106,7 +106,7 @@ export default function Matching({ route }) {
                 marginBottom: 8,
                 borderRadius: 8
               }}
-              onPress={() => handleMatch(option.option, value.value, index)}
+              onPress={() => handleMatch(option.option, null, index)}
             />
           ))}
         </View>
@@ -135,7 +135,7 @@ export default function Matching({ route }) {
                 marginBottom: 8,
                 borderRadius: 8
               }}
-              onPress={() => handleMatch(selectedOption, value.value)}>
+              onPress={() => handleMatch(selectedOption, value.value, selectedIndex)}>
             </Button>
           ))}
         </View>

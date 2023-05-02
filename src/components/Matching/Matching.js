@@ -56,7 +56,7 @@ export default function Matching({ route }) {
 
   const checkAnswers = () => {
     console.log('matched items length', matchedItems.length);
-    console.log('trivia items lenght', triviaItems);
+    console.log('trivia items length', triviaItems.length);
     const isAllMatched = matchedItems.length === triviaItems.length
     if (isAllMatched) {
       const isAllCorrect = matchedItems.every(

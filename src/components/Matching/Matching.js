@@ -16,6 +16,13 @@ export default function Matching({ route }) {
     let matches = [];
     matches = matchedItems;
 
+    let match = {option: option, value:value, index: index};
+
+    let deleteMatch = 
+
+      if(matches.find(i => option === option)=== true){
+        let de = {option }
+      } 
     matches.push({option: option, value:value, index: index});
     setMatchedItems(matches);
 

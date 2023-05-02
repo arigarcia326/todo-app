@@ -74,6 +74,8 @@ export default function Matching({ route }) {
         matchedItems: matchedItems,
         isAllCorrect: isAllCorrect
       };
+
+      console.log('All Matched', isAllMatched);
       navigation.navigate('Summary', { result })
     } else {
       alert('Not all items are matched.')

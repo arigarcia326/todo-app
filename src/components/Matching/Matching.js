@@ -95,14 +95,6 @@ export default function Matching({ route, navigation }) {
                 background: selectedIndex === null ? 'white' 
                   : matchedItems.some(i => i.value === value.value) === false? 'white' 
                   : matchingColors[matchedItems.find(i => i.value === value.value).index],
-                // backgroundColor:
-                //   selectedValue === value.value ? 'yellow' : matchedItems.find(
-                //       (matchedItem) =>
-                //         matchedItem.option === null &&
-                //         matchedItem.value === value.value
-                //     )
-                //   ? 'orange'
-                //   : 'white',
                 borderWidth: 1,
                 borderColor: 'black',
                 padding: 16,

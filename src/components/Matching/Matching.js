@@ -8,8 +8,8 @@ export default function Matching({ route }) {
   const [matchedItems, setMatchedItems] = useState([])
   const [selectedOption, setSelectedOption] = useState(null)
   const [selectedValue, setSelectedValue] = useState(null)
-  const 
-  
+  const matchingColors = ['#F24968', '#6929F2','#9B72F2','#14D990','#F2B807']
+
   const handleMatch = (option, value, index) => {
     if (selectedOption && selectedValue) {
       const matchedItem = { option: selectedOption, value: selectedValue, index }

@@ -19,6 +19,8 @@ export default function Matching({ route }) {
     if(matchedItems.some(i => i.index === selectedIndex)){
       match = {option: selectedOption, value:value, index: selectedIndex}; 
       matches = matchedItems.filter( i => i.index !== selectedIndex);
+      selectedIndex(-1);
+      selectedOption(null)
     }else{
       matches = matchedItems;
       selectedOption(option);

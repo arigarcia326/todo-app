@@ -18,7 +18,12 @@ export default function Matching({ route }) {
 
     let match = {option: option, value:value, index: index};
 
-    let deleteMatch = 
+    let deleteMatch = matchedItems.find(i => option === option);
+
+    if(deleteMatch !== undefined) 
+    { 
+      matches = matchItems.filter( i => i.index !== )
+    }
 
       if(matches.find(i => option === option)=== true){
         let de = {option }

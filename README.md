@@ -1,5 +1,5 @@
 # trivia-app
-This project is a simple trivia app containing different subjects to choose from to answer questions. 
+This project is a simple trivia app containing different subjects to choose from to answer a series of questions followed by their results. 
 
 ## Features
 * user input: The user is able to input their answer.

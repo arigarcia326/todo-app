@@ -2,7 +2,7 @@
   "name": "trivia-app",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
-  "homepage": "http://arigarcia326.io/trivia-app",
+  "homepage": "http://arigarcia326.github.io/trivia-app",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

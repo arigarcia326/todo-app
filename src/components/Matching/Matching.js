@@ -98,14 +98,18 @@ export default function Matching({ route }) {
               title = {value.value}
               titleStyle={styles.valueStyle}
               buttonStyle={{
-                backgroundColor:
-                  selectedValue === value.value ? 'yellow' : matchedItems.find(
-                      (matchedItem) =>
-                        matchedItem.option === null &&
-                        matchedItem.value === value.value
-                    )
-                  ? 'orange'
-                  : 'white',
+                background: selectedIndex === null ? 'white' 
+                  : selectedIndex === index ? `${matchingColors[selectedIndex]}` 
+                  : matchedItems.some(i => i.index === index) === false? 'white' 
+                  : matchingColors[matchedItems.find(i => i.index === index).index],
+                // backgroundColor:
+                //   selectedValue === value.value ? 'yellow' : matchedItems.find(
+                //       (matchedItem) =>
+                //         matchedItem.option === null &&
+                //         matchedItem.value === value.value
+                //     )
+                //   ? 'orange'
+                //   : 'white',
                 borderWidth: 1,
                 borderColor: 'black',
                 padding: 16,

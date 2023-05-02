@@ -9,7 +9,7 @@ export default function Matching({ route, navigation }) {
   const [selectedOption, setSelectedOption] = useState(null)
   const [selectedValue, setSelectedValue] = useState(null)
   const [selectedIndex, setSelectedIndex] = useState(null)
-  const [userAnswers, setUserAnswers] = (Array(triviaItems.length).fill(""))
+  const [userAnswers, setUserAnswers] = useState(Array(triviaItems.length).fill(""));
   const matchingColors = ['#F24968', '#6929F2','#9B72F2','#14D990','#F2B807', '#F22ED2']
 
   const handleMatch = (option, value, index) => {

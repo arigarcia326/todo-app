@@ -63,15 +63,17 @@ export default function Matching({ route }) {
       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
         <View style={{ flex: 1, marginRight: 8 }}>
           {item.answer.map((option, index) => (
+            
             <Button
               key={`${item.prompt}_${option.option}`}
               titleStyle= {styles.optionStyle}
               title = {option.option}
               buttonStyle={{
+              
                 background: selectedIndex === null ? 'white' 
                 : selectedIndex === index ? `${matchingColors[selectedIndex]}` 
                 : matchedItems.some(i => i.index === index) === false? 'white' 
-                : matchingColors[matchedItems.filter(i => i.index == index).index],
+                : matchingColors[matchedItems.filter(i => i.index === index).index],
                 // backgroundColor:
                 //   selectedOption === option.option ? 'yellow' : matchedItems.find(
                 //       (matchedItem) =>

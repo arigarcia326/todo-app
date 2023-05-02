@@ -10,10 +10,13 @@ export default function DropDown({route}) {
   const [userAnswers, setUserAnswers] = useState(Array(triviaItems.length).fill(""))
   const [showSummary, setShowSummary] = useState(false)
 
+  // updates the state of the component based on the current index of the question being shown
   const nextQuestion = () => {
+    //if current question index is less than the total number of trivia items, the state is updated by incrementing the current question index by 1
     if (currentQuestionIndex < triviaItems.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
     } else {
+      //if at the last index, showSummary state is set to true and the Summary component is rendered
       setShowSummary(true)
     }
   }

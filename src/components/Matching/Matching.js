@@ -19,12 +19,15 @@ export default function Matching({ route, navigation }) {
     let match = {option: '', value:'', index: -1};
 
     //if value is not null, the user has selected an option
+    //function updates existing match in matchedItems array with the new value
     if(value !== null){
       match = {option: selectedOption, value:value, index: selectedIndex}; 
       matches = matchedItems.filter( i => i.index !== selectedIndex);
       setSelectedIndex(-1);
       setSelectedOption(null)
     }else{
+      //value is null
+      //creates a new match object and adds it to matchedItems array
       match = {option: option, value: null, index: index};
       matches = matchedItems;
       setSelectedOption(option);
